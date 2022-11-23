@@ -26,7 +26,6 @@ public class Datatable {
 	@When("^User enter SignUp Details$")
 	public void user_enter_SignUp_Details(DataTable data) throws Throwable {
 	    driver.findElement(By.xpath("//a[contains(text(),'Create New Account')]")).click();
-		List<List<String>> list = data.raw();    //
 		List<List<String>> listobj = data.raw();
 		System.out.println(listobj.get(0).get(0));
 		System.out.println(listobj.get(0).get(1));
